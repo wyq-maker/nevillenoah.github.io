@@ -1233,7 +1233,7 @@
 <li>配置新引擎<code>node_modules\kramed\lib\rules\inline.js</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; escape: &#x2F;^\\([\\&#96;*&#123;&#125;\[\]()#$+\-.!_&gt;])&#x2F;,</span><br><span class="line">escape: &#x2F;^\\([&#96;*\[\]()#$+\-.!_&gt;])&#x2F;,</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;em: &#x2F;^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)&#x2F;,</span><br><span class="line">em: &#x2F;^\*((?:\*\*|[\s\S])+?)\*(?!\*)&#x2F;,</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="每页开启mathjax"><a href="#每页开启mathjax" class="headerlink" title="每页开启mathjax"></a>每页开启mathjax</h2><p>注意，上面开了只是首页开启了mathjax，当你点开具体文章，可能会发现mathjax没有渲染，因此需要在每篇文章头部写上<code>mathjax:true</code></p>
+<h2 id="每页开启"><a href="#每页开启" class="headerlink" title="每页开启"></a>每页开启</h2><p>注意，上面开了只是首页开启了mathjax，当你点开具体文章，可能会发现mathjax没有渲染，因此需要在每篇文章头部写上<code>mathjax:true</code></p>
 <h1 id="图片路径问题"><a href="#图片路径问题" class="headerlink" title="图片路径问题"></a>图片路径问题</h1><h2 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h2><p>很多人在安装hexo-asset-image后，仍会出现图片不显示问题。在<code>hexo g</code>后，查看命令行，会发现<code>update link as</code>的时候你可能遇到如下情景：</p>
 <ul>
 <li>图片被保存到<code>/.com</code>。因为你没有改站点配置文件的<code>url</code>，而<code>url</code>默认值是<code>www.yoursite.com</code>。</li>
